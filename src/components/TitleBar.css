@@ -1,0 +1,7 @@
+.TitlebarBg {
+  background-image: url("https://brilliantio.com/wp-content/uploads/2022/01/is-traveling-necessary.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: relative;
+}

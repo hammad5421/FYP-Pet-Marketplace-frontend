@@ -1,0 +1,17 @@
+
+
+.DiscovermoreBg {
+  background-image: url("https://zamzam.com/blog/wp-content/uploads/2021/06/al-haram-mosque.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: relative;
+}
+
+.DivineMomentBg {
+  background-image: url("https://greendome.org/wp-content/uploads/2020/06/masjid-an-nabawi-750x430.webp");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: relative;
+}
