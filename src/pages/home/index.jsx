@@ -1,17 +1,20 @@
 import { BasicLayout } from "../../layouts";
 
 import Hero from "./Hero";
-import Testimonial from "./Testimonial";
-import { Packages, PricingTable } from "../../components";
+import SellPetBanner from "./Headline";
+import FeatureSection from "./FeatureSection";
+import Card from "./Cardsection";
+import AboutComponent from "./About";
 
 const Home = () => {
   return (
     <>
       <BasicLayout>
         <Hero />
-        <Packages />
-        <PricingTable />
-        <Testimonial />
+        <SellPetBanner/>
+        <FeatureSection/>
+        <Card/>
+        <AboutComponent/>
       </BasicLayout>
     </>
   );

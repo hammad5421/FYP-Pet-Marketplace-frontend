@@ -1,59 +1,48 @@
 import React from "react";
-import HeroImage from "../../Assets/HeroImage.png";
-import "./index.css";
-import { ButtonPlain } from "../../components";
-import { useNavigate } from "react-router-dom";
-import Routes from "../../router/Routes";
-import {useTranslation} from "react-i18next";
+import Bgimage from "../../Assets/Bg.jpg";
+import Icon1 from "../../Assets/dogs.svg";
+import Icon2 from "../../Assets/cats.svg";
+import Icon3 from "../../Assets/others.svg";
 
 const Hero = () => {
-  const {t}= useTranslation();
-  const handleClick = (e)=>{
-    i18n.changeLanguage(e.target.value)
-  }
-  const navigate = useNavigate();
   return (
-    <div>
-      <section className="heroBg text-gray-600 body-font relative h-92">
-        <div className="overlay"> </div>
-
-        <div className="z-10 relative">
-          <div className="container mx-auto flex px-6 py-5 md:flex-row flex-col items-center">
-            <div className="hidden lg:block lg:max-w-xl mx-7 lg:w-full md:w-1/2 w-5/2">
-              <img
-                className="object-cover object-center rounded"
-                alt="hero"
-                src={HeroImage}
-              />
-            </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
-              <p className="mb-4 text-white leading-relaxed">
-                {t('welcome')} 
-              </p>
-              <h1 className="title-font text-white sm:text-5xl text-4xl mb-6 font-medium ">
-                 {t('hajj')}
-                <br className="hidden lg:inline-block" />
-                 {t('travelAgency')}
-
-              </h1>
-              <p className="mb-8 leading-relaxed text-white">
-              {t('homep1')}
-             
-
-                
-              </p>
-              <div className="flex justify-center">
-                <ButtonPlain
-                  text={t('homebtn')}
-                  onClick={() => navigate(Routes.trips)}
-                  width="w-48"
-                  borderRadius="rounded-full"
-                />
-              </div>
-            </div>
+    <div
+      className="relative"
+      style={{
+        backgroundImage: `url(${Bgimage})`,
+        backgroundRepeat: "no-repeat", // Prevent background image from repeating
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="relative flex flex-col justify-center items-center h-screen text-white">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4" style={{ color: "#6F40AF" }}>
+            Welcome to LovePets.com
+          </h1>
+          <h2 className="text-lg mb-6" style={{ color: "#6F40AF" }}>
+            Find your next pet amongst our 7773 pet listings
+          </h2>
+          <div className="flex items-center justify-center mb-8">
+            {/* Search bar */}
+            <input
+              type="text"
+              placeholder="Search for pets..."
+              className="bg-white text-gray-800 rounded-l-[5px] py-2 px-4 w-[35vw] h-14 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            />
+            {/* Search button */}
+            <button className="bg-purple-600 text-white rounded-r-[5px] px-6 py-2 h-14 focus:outline-none focus:ring-2 focus:ring-purple-600">
+              Search
+            </button>
+          </div>
+          {/* Clickable icons */}
+          <div className="flex items-center justify-center space-x-4">
+            <img src={Icon1} alt="Icon 1" className="h-12" />
+            <img src={Icon2} alt="Icon 2" className="h-12" />
+            <img src={Icon3} alt="Icon 3" className="h-12" />
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
