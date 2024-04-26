@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Routes from "../router/Routes";
@@ -161,3 +162,6 @@ export default function Navbar() {
     </nav>
   );
 }
+=======
+cls
+>>>>>>> b8c2efa (frontend uploading for first time)
