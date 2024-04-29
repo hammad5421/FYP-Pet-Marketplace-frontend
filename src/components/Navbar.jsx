@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useContext, useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Routes from "../router/Routes";
@@ -39,7 +38,7 @@ export default function Navbar() {
           {/* Find Pet */}
           <Link
             to={Routes.find_pet}
-            className={`text-md font-bold text-purple-800 ${
+            className={`text-md font-bold text-purple-900 ${
               Routes.find_pet === location.pathname ? "text-btn-color" : ""
             }`}
           >
@@ -48,7 +47,7 @@ export default function Navbar() {
           {/* Create Listing */}
           <Link
             to={Routes.create_listing}
-            className={`text-md font-bold text-purple-800 ${
+            className={`text-md font-bold text-purple-900 ${
               Routes.create_listing === location.pathname
                 ? "text-btn-color"
                 : ""
@@ -59,7 +58,7 @@ export default function Navbar() {
           {/* Adopt Pet */}
           <Link
             to={Routes.adopt_pet}
-            className={`text-md font-bold text-purple-800 ${
+            className={`text-md font-bold text-purple-900 ${
               Routes.adopt_pet === location.pathname ? "text-btn-color" : ""
             }`}
           >
@@ -83,7 +82,7 @@ export default function Navbar() {
           {!token && (
             <Link
               to={Routes.customer_sign_in}
-              className={`text-md font-bold text-purple-800 ${
+              className={`text-md font-bold text-purple-900 ${
                 Routes.customer_sign_in === location.pathname
                   ? "text-btn-color"
                   : ""
@@ -96,7 +95,7 @@ export default function Navbar() {
           {!token && (
             <Link
               to={Routes.create_user}
-              className={`text-md font-bold text-purple-800 ${
+              className={`text-md font-bold text-purple-900 ${
                 Routes.create_user === location.pathname ? "text-btn-color" : ""
               }`}
             >
@@ -162,6 +161,3 @@ export default function Navbar() {
     </nav>
   );
 }
-=======
-cls
->>>>>>> b8c2efa (frontend uploading for first time)

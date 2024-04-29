@@ -1,17 +1,15 @@
-import React from 'react';
+import React from "react";
+import backgroundImage from "../../Assets/fisk-2.jpg"; // Import the background image
 
-const AboutComponent = () => {
+const ComponentWithBackground = () => {
   return (
-    <div className="relative h-200 bg-cover bg-center" style={{backgroundImage: "url('path_to_your_image.jpg')" }}>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-white text-center">
-          <h2 className="text-3xl font-bold mb-4">About Us</h2>
-          <p className="text-lg">LikePets.co.uk makes it easy to find your next pet. We gather all pets for sale on the internet. Find your new family member among our many pet listings.</p>
-        </div>
+    <div className="mt-[-58px] mb-[-58px] bg-no-repeat flex items-center" style={{backgroundImage: `url(${backgroundImage})`, backgroundSize: 'contain', backgroundPosition: 'center', height: "calc(100vh - 108px)"}}>
+      <div className="w-1/2 p-8">
+        <h2 className="text-2xl font-bold mb-4 text-white">About LovePets.com</h2>
+        <p className="text-small text-white">LovePets.com makes it easy to find your next pet. We gather all pets for sale on the internet. Find your new family member among our many pet listings.</p>
       </div>
     </div>
   );
 };
 
-export default AboutComponent;
+export default ComponentWithBackground;
