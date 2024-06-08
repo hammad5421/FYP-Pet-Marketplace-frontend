@@ -4,10 +4,12 @@ import Hero from "./Hero";
 import SellPetBanner from "./Headline";
 import FeatureSection from "./FeatureSection";
 import Card from "./Cardsection";
-import AboutComponent from "./About";
-import AboutHome from "./Contact";
+
 import PetCard from "./PetCards";
 import FAQ from "./Faq";
+import BannerComponent from "./BreedIdentificationBanner";
+import PetHealthBanner from "./SymtomTrackerBanner";
+import PetAdoptionBanner from "./AdoptPetBanner";
 
 const Home = () => {
   return (
@@ -17,10 +19,11 @@ const Home = () => {
         <SellPetBanner/>
         <FeatureSection/>
         <Card/>
-        <AboutComponent/>
-        <AboutHome/>
+        {/* <AboutComponent/> */}
         <PetCard/>
-        
+        <PetAdoptionBanner/>
+        <BannerComponent/>
+        <PetHealthBanner/>
 
       </BasicLayout>
     </>

@@ -1,8 +1,6 @@
 import React from "react";
-import { ButtonPlain } from "../../components";
 import { BasicLayout } from "../../layouts";
 import { useNavigate } from "react-router-dom";
-import Routes from "../../router/Routes";
 
 export default function NotFound() {
   const navigate = useNavigate();
@@ -22,13 +20,7 @@ export default function NotFound() {
               home page.{" "}
             </p>
             <div>
-              <ButtonPlain
-                text="Back To Home Page"
-                width="w-60"
-                classes="mx-auto"
-                onClick={() => navigate(Routes.home)}
-                borderRadius="rounded-full"
-              />
+             
             </div>
           </div>
         </div>
