@@ -34,10 +34,10 @@ export default function UnauthenticatedNavbar() {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 px-4 transition-all duration-300 ${scrolling ? "bg-white border-gray-200" : "border-transparent"}`}>
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4">
           {/* Center section */}
           <Link to={Routes.home} className="flex items-center space-x-3">
-            <img src={logo} className="h-12" alt="lovePet" />
+            <img src={logo} className="h-24" alt="lovePet" />
             <span className="self-center text-3xl font-semibold whitespace-nowrap"></span>
           </Link>
 
